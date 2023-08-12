@@ -13,3 +13,8 @@ body{
     --headingFont-color: #000c04;
     --bg-light: rgba(147, 107, 232, 0.05);
 }
+
+/* Our plan */
+.ourPlan {
+  background: aqua;
+}

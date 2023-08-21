@@ -24,7 +24,10 @@
       rel="stylesheet"
     />
     <!-- Google Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <!-- Font Awsome -->
     <link
       rel="stylesheet"
@@ -33,11 +36,31 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- main css -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  
+
   <body>
     <!--1 Heading -->
     <header></header>
@@ -57,62 +80,67 @@
     <!--6 Data -->
     <section></section>
 
-
-
-
     <!--7 Our Plan -->
     <section class="ourPlan">
-      <div class="container">
+      <div class="container pb-lg-5 pt-lg-4 pt-md-3 pb-md-4">
         <div class="plan__heading text-center">
           <h6>Our plans</h6>
-          <h3>Affordable Packages</h3>
+          <h3 class="mb-5">Affordable Packages</h3>
         </div>
         <div class="plan__item-container">
-          <div class="plan__pricing d-flex">
+          <div class="plan__pricing d-flex align-items-center text-center">
             <!-- 1 -->
-            <div class="pricing-contain col-lg-4">
-              <h3>Free Package</h3>
-              <h4><span>$</span>0<span>/month</span></h4>
-              <div class="pricing-content">
-                <p>5 Dog Walk</p>
-                <p>3 Vet Visit</p>
-                <p>3 Pet Spa</p>
-                <p>Free Supports</p>
-                <p>Customer Support</p>
-              </div>
-              <button class="btn btn-success">Buy Now</button>
+            <div class="pricing-contain col-lg-4 col-sm-12">
+              <div class="pricing-padding">
+                <div class="pricing-top">
+                  <h3>Free Package</h3>
+                  <h4><span>$</span>0<span>/month</span></h4>
+                </div>
 
+                <div class="pricing-content">
+                  <p>5 Dog Walk</p>
+                  <p>3 Vet Visit</p>
+                  <p>3 Pet Spa</p>
+                  <p>Free Supports</p>
+                  <p>Customer Support</p>
+                </div>
+                <button class="btn btn-success">Buy Now</button>
+              </div>
             </div>
             <!-- 2 -->
-            <div class="pricing-contain col-lg-4">
-              <div class="pricing__contain-center">
+            <div class="pricing-contain shadowww col-lg-4 col-sm-12">
+              <div class="pricing__contain-center text-light">
                 <h4>Save 10%</h4>
                 <h2>Standard Package</h2>
                 <h4><span>$</span>39<span>/month</span></h4>
               </div>
-              <div class="pricing-content">
-                <p>5 Dog Walk</p>
-                <p>3 Vet Visit</p>
-                <p>3 Pet Spa</p>
-                <p>Free Supports</p>
-                <p>Customer Support</p>
+              <div class="pricing__contain-cbot">
+                <div class="pricing-content no-top">
+                  <p>5 Dog Walk</p>
+                  <p>3 Vet Visit</p>
+                  <p>3 Pet Spa</p>
+                  <p>Free Supports</p>
+                  <p>Customer Support</p>
+                </div>
+                <button class="btn btn-success">Buy Now</button>
               </div>
-              <button class="btn btn-success">Buy Now</button>
-
             </div>
             <!-- 3 -->
-            <div class="pricing-contain col-lg-4">
-              <h3>Pro Package</h3>
-              <h4><span>$</span>89<span>/month</span></h4>
-              <div class="pricing-content">
-                <p>5 Dog Walk</p>
-                <p>3 Vet Visit</p>
-                <p>3 Pet Spa</p>
-                <p>Free Supports</p>
-                <p>Customer Support</p>
+            <div class="pricing-contain col-lg-4 col-sm-12">
+              <div class="pricing-padding">
+                <div class="pricing-top">
+                  <h3>Pro Package</h3>
+                  <h4><span>$</span>89<span>/month</span></h4>
+                </div>
+                <div class="pricing-content">
+                  <p>5 Dog Walk</p>
+                  <p>3 Vet Visit</p>
+                  <p>3 Pet Spa</p>
+                  <p>Free Supports</p>
+                  <p>Customer Support</p>
+                </div>
+                <button class="btn btn-success">Buy Now</button>
               </div>
-              <button class="btn btn-success">Buy Now</button>
-
             </div>
           </div>
         </div>
@@ -120,18 +148,317 @@
     </section>
 
     <!--8 Pet Nutrition -->
-    <section></section>
+    <section class="nutri py-5">
+      <div class="container py-lg-5">
+        <div class="middle__nutri">
+          <div class="nutri__top text-center">
+            <h6>BETTER PET NUTRITION</h6>
+            <h3>The Finest Fresh Food And All Your Pet Needs</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem
+              ipsum dolor sit amet elit consec tetur adipisi elit. Lorem ipsum
+              dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus
+              explicabo officia.
+            </p>
+          </div>
+          <div class="nutri__wrapperbot">
+            <div class="nutri__bottom mt-5">
+              <img
+                class="img-fluid"
+                src="./img/banne_girlNdog.jpg"
+                alt="Responsive image"
+              />
+              <div class="nutri__icon">
+                <span><i id="open-movie" class="fa fa-play"></i></span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--9 Feedbacks -->
-    <section></section>
+    <section class="Feedbacks py-5">
+      <div class="container py-lg-4 py-md-3 px-lg-4">
+        <div class="fedd__top text-center">
+          <p>TESTIMONIALS</p>
+          <h2 class="mb-md-5 mb-4">Happy Clients & Feedbacks</h2>
+        </div>
+        <div class="feed__content">
+          <div class="owl-carousel owl-theme">
+            <!-- 1 -->
+            <div class="feed__item-wrap">
+              <div class="fedd__items">
+                <div class="f-item__wrap">
+                  <blockquote class="quotee">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Velit beatae laudantium voluptate rem ullam dolore nisi
+                      voluptatibus esse quasi, doloribus tempora. Dolores
+                      molestias adipisci dolor sit amet!.
+                    </p>
+                  </blockquote>
+                  <div class="feed__profile">
+                    <div class="feed__img">
+                      <img
+                        class=""
+                        src="./img/feedback_girlBlueSMile.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="feed__name">
+                      <h4>John Wilson</h4>
+                      <p>Example City</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="feed__item-wrap">
+              <div class="fedd__items">
+                <div class="f-item__wrap">
+                  <blockquote class="quotee">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Velit beatae laudantium voluptate rem ullam dolore nisi
+                      voluptatibus esse quasi, doloribus tempora. Dolores
+                      molestias adipisci dolor sit amet!.
+                    </p>
+                  </blockquote>
+                  <div class="feed__profile">
+                    <div class="feed__img">
+                      <img class="" src="./img/feedback_guyRed.jpg" alt="" />
+                    </div>
+                    <div class="feed__name">
+                      <h4>Julia Sakura</h4>
+                      <p>Example City</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="feed__item-wrap">
+              <div class="fedd__items">
+                <div class="f-item__wrap">
+                  <blockquote class="quotee">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Velit beatae laudantium voluptate rem ullam dolore nisi
+                      voluptatibus esse quasi, doloribus tempora. Dolores
+                      molestias adipisci dolor sit amet!.
+                    </p>
+                  </blockquote>
+                  <div class="feed__profile">
+                    <div class="feed__img">
+                      <img
+                        class=""
+                        src="./img/feedback_brownDress.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="feed__name">
+                      <h4>Roy Linderson</h4>
+                      <p>Example City</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="feed__item-wrap">
+              <div class="fedd__items">
+                <div class="f-item__wrap">
+                  <blockquote class="quotee">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Velit beatae laudantium voluptate rem ullam dolore nisi
+                      voluptatibus esse quasi, doloribus tempora. Dolores
+                      molestias adipisci dolor sit amet!.
+                    </p>
+                  </blockquote>
+                  <div class="feed__profile">
+                    <div class="feed__img">
+                      <img
+                        class=""
+                        src="./img/feedback_mustardGuy.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="feed__name">
+                      <h4>Mike Thyson</h4>
+                      <p>Example City</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="feed__item-wrap">
+              <div class="fedd__items">
+                <div class="f-item__wrap">
+                  <blockquote class="quotee">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Velit beatae laudantium voluptate rem ullam dolore nisi
+                      voluptatibus esse quasi, doloribus tempora. Dolores
+                      molestias adipisci dolor sit amet!.
+                    </p>
+                  </blockquote>
+                  <div class="feed__profile">
+                    <div class="feed__img">
+                      <img class="" src="./img/feedback_guyRed.jpg" alt="" />
+                    </div>
+                    <div class="feed__name">
+                      <h4>Laura Grill</h4>
+                      <p>Example City</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="feed__item-wrap">
+              <div class="fedd__items">
+                <div class="f-item__wrap">
+                  <blockquote class="quotee">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Velit beatae laudantium voluptate rem ullam dolore nisi
+                      voluptatibus esse quasi, doloribus tempora. Dolores
+                      molestias adipisci dolor sit amet!.
+                    </p>
+                  </blockquote>
+                  <div class="feed__profile">
+                    <div class="feed__img">
+                      <img
+                        class=""
+                        src="./img/feedback_brownDress.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="feed__name">
+                      <h4>SMith Johnson</h4>
+                      <p>Example City</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--10 Update -->
-    <section></section>
+    <section class="update py-5">
+      <div class="container py-md-4 py-3 text-center">
+        <div class="update__warp my-lg-4 mt-4 mx-auto">
+          <div class="update__top text-center">
+            <h2>Stay Updated!</h2>
+            <p class="my-3">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
+              turpis sodales quis. Integer sit amet mattis quam.
+            </p>
+          </div>
+          <div class="update__bot pt-2 mt-5">
+            <form
+              class="d-flex"
+              action="
+            "
+              method="post"
+            >
+              <input
+                type="email"
+                required
+                class="form-control"
+                placeholder="Enter your email..."
+              />
+              <button type="submit" class="btn btn-style btn-success">
+                Subcribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--11 footer -->
-    <footer></footer>
-   
-    
+    <footer class="footer pt-lg-3">
+      <div class="container">
+        <div class="footer__top pt-5 row text-left">
+          <div class="footer__left col-lg-6">
+            <h4 class="footer-text">Contact infomation</h4>
+            <p>
+              <strong>Address</strong> : #135 block, Barnard St. Brooklyn,
+              London 10036, UK
+            </p>
+            <p><strong>Phone</strong> : +(12)234-11-24</p>
+            <p><strong>Email</strong> : example@mail.com</p>
+            <ul class="mt-3">
+              <li><i class="fab fa-facebook-f"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-dribbble"></i></li>
+              <li><i class="fab fa-google"></i></li>
+            </ul>
+          </div>
+          <div class="footer__right row col-lg-6">
+            <div class="f_right-items col-6 col-sm-4">
+              <h4 class="footer-text">Archives</h4>
+              <p>December 2020</p>
+            </div>
+            <!-- 2 -->
+            <div class="f_right-items col-6 col-sm-4">
+              <h4 class="footer-text">Categories</h4>
+              <ul>
+                <li><a href="#">Animals</a></li>
+                <li><a href="#">Pets</a></li>
+                <li><a href="#">Pets care</a></li>
+                <li><a href="#">Uncategorized</a></li>
+              </ul>
+            </div>
+            <!-- 3 -->
+            <div class="f_right-items col-6 col-sm-4">
+              <h4 class="footer-text">Meta</h4>
+              <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Entries feed</a></li>
+                <li><a href="#">Comments feed</a></li>
+                <li><a href="#">WordPress.org</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bot py-lg-4 mt-5 pt-3 text-center">
+          <p>
+            &copy;2023 All Rights Reserved by
+            <span><a href="">W3Layouts.</a></span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- movielayout pop up -->
+
+    <div id="movie_popup" class="movie__popup   ">
+      <iframe
+        class="movie-frame animate__animated animate__zoomIn wow"
+        src="https://player.vimeo.com/video/101587706"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay"
+      ></iframe>
+      <i id="close-movie" class="fa fa-times movie-icon animate__animated animate__zoomIn wow"></i
+      >
+    </div>
+
+    <!-- <a id="close-movie" class="movie-icon"
+        ><i class="fa fa-times"></i
+      ></a> -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -149,6 +476,44 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- owlcarolsel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            600: {
+              items: 1,
+              nav: false,
+            },
+            1024: {
+              items: 2,
+              nav: false,
+              loop: false,
+            },
+          },
+        });
+      });
+    </script>
 
     <!-- main js -->
     <script src="./js/index.js"></script>

@@ -36,7 +36,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- boostrap icoin -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- main css -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -46,9 +53,11 @@
     <header id="site-header" class="main-header fixed-top nav-fixed">
       <div class="container">
         <nav class="navbar navbar-expand-lg stroke">
-          <h1>
-            <a class="navbar-brand" href=""> Pooch Care </a>
-          </h1>
+          <div class="logo">
+            <h1>
+              <a class="navbar-brand" href=""> Pooch Care </a>
+            </h1>
+          </div>
 
           <button
             class="navbar-toggler bg-gradient"
@@ -112,26 +121,14 @@
           </div>
 
           <!-- toggle switch for light and dark theme -->
-          <!-- <button>
-            <div class="mobile-position DarkandLight">
-              <nav class="navigation">
-                <div class="theme-switch-wrapper">
-                  <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="mode-container">
-                      <i class="gg-sun"></i>
-                      <i class="gg-moon"></i>
-                    </div>
-                  </label>
-                </div>
-              </nav>
-            </div>
-          </button> -->
+          <div id="moon_icoin" class="dark__mode">
+            <i onclick="changeIcon(this)" id="darl_mode" class="bi bi-moon"></i>
+          </div>
           <!-- //toggle switch for light and dark theme -->
         </nav>
       </div>
     </header>
-    <div class="header-fixed-space-height"></div>
+
     <!--2 Carousel -->
     <section id="home">
       <div class="bd-example">
@@ -186,6 +183,7 @@
                 </div>
               </div>
             </div>
+            <!-- 2 -->
             <div class="carousel-item">
               <img
                 src="./img/banne_girlNdog.jpg"
@@ -197,9 +195,11 @@
                   <div class="container">
                     <div class="banner-info-bg ml-lg-auto">
                       <h5>Delivering happiness for Pets</h5>
-                      <p>For the love of pets</p>
-                      <a class="btn btn-style btn-white" href=""> Read More</a>
-                      <a class="btn btn-style border-btn" href="">
+                      <p class="caro__text">For the love of pets</p>
+                      <a class="btn btn-style caro__button btn-white" href="">
+                        Read More</a
+                      >
+                      <a class="btn btn-style caro__button2 border-btn" href="">
                         Contact Us</a
                       >
                     </div>
@@ -207,6 +207,7 @@
                 </div>
               </div>
             </div>
+            <!-- 3 -->
             <div class="carousel-item">
               <div class="image">
                 <img
@@ -240,6 +241,7 @@
                 </div>
               </div>
             </div>
+            <!-- 4 -->
             <div class="carousel-item">
               <img
                 src="./img/banner_pug.jpg "
@@ -251,9 +253,11 @@
                   <div class="container">
                     <div class="banner-info-bg ml-lg-auto">
                       <h5>Delivering happiness for Pets</h5>
-                      <p>We help your Projects</p>
-                      <a class="btn btn-style btn-white" href=""> Read More</a>
-                      <a class="btn btn-style border-btn" href="">
+                      <p class="caro__text">We help your Projects</p>
+                      <a class="btn btn-style caro__button btn-white" href="">
+                        Read More</a
+                      >
+                      <a class="btn btn-style caro__button2 border-btn" href="">
                         Contact Us</a
                       >
                     </div>

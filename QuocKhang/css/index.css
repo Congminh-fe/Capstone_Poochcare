@@ -99,6 +99,11 @@ header .nav-item a:hover::before {
 .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: var(--primary-color);
 }
+.navbar-expand-lg .navbar-nav .dropdown-item:hover {
+  color: var(--primary-color);
+  transition: 0.5s;
+  background: var(--dropdown-color);
+}
 .navbar-expand-lg .navbar-nav .nav-item {
   padding: 0 12px;
   transition: all 0.5s ease;

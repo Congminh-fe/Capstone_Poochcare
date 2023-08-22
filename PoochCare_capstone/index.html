@@ -64,22 +64,254 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- backtotop -->
+    
 
     <!-- main css -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
-  <body>
+  <body class="theme-toggle">
     <!--1 Heading -->
-    <header>
-      
+    <header id="site-header" style="transition: all 0.5s;" class="main-header fixed-top nav-fixed">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg stroke">
+          <div class="logo">
+            <h1>
+              <a class="navbar-brand" href=""> Pooch Care </a>
+            </h1>
+          </div>
+
+          <button
+            class="navbar-toggler bg-gradient"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-content"
+            aria-controls="navbar-content"
+            aria-expanded="true"
+            aria-label="Toggle Navigation"
+          >
+            <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+            <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul id="primary-menu" class="navbar-nav ml-auto">
+              <li id="menu-item-26" class="nav-item active">
+                <a class="nav-link active">Home</a>
+              </li>
+              <li id="menu-item-25" class="nav-item">
+                <a class="nav-link">About</a>
+              </li>
+              <li id="menu-item-24" class="nav-item">
+                <a class="nav-link">Services</a>
+              </li>
+              <li id="menu-item-23" class="nav-item">
+                <a class="nav-link">Gallery</a>
+              </li>
+              <li id="menu-item-22" class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  id="navbar-dropdown-menu-link-21"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Pages</a
+                >
+                <div
+                  class="sub-menu dropdown-menu"
+                  aria-labelledby="navbar-dropdown-menu-link-21"
+                >
+                  <a class="dropdown-item" id="menu-item-27">Blog Posts</a
+                  ><a class="dropdown-item" id="menu-item-22">Landing page</a>
+                </div>
+              </li>
+              <li
+                id="menu-item-20"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20 nav-item"
+              >
+                <a class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav search-right mt-lg-0">
+              <li class="HeaderSearch" title="Search">
+                <a href="" class="btn search-search">
+                  <span class="fa fa-search" aria-hidden="true"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- toggle switch for light and dark theme -->
+          <div id="moon_icoin" class="dark__mode">
+            <i onclick="changeIcon(this)" id="darl_mode" class="bi bi-moon"></i>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+        </nav>
+      </div>
     </header>
 
     <!--2 Carousel -->
-    <section></section>
+    <section id="home">
+      <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="0"
+              class="button_carousel active"
+            >
+              <span></span>
+            </li>
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="1"
+              class="button_carousel"
+            >
+              <span></span>
+            </li>
+
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="2"
+              class="button_carousel"
+            >
+              <span></span>
+            </li>
+
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="3"
+              class="button_carousel"
+            >
+              <span></span>
+            </li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/banner_pug.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption">
+                <div class="banner-info">
+                  <div class="container">
+                    <div class="banner-info-bg text-left">
+                      <h5>Quality Things for Loving Pets</h5>
+                      <p>Keeps your Pet Smiling</p>
+                      <a class="btn btn-style btn-white" href=""> Read More</a>
+                      <a class="btn btn-style border-btn" href="">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="carousel-item">
+              <img
+                src="./img/banne_girlNdog.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption carousel-view">
+                <div class="banner-info">
+                  <div class="container">
+                    <div class="banner-info-bg ml-lg-auto">
+                      <h5>Delivering happiness for Pets</h5>
+                      <p class="caro__text">For the love of pets</p>
+                      <a class="btn btn-style caro__button btn-white" href="">
+                        Read More</a
+                      >
+                      <a class="btn btn-style caro__button2 border-btn" href="">
+                        Contact Us</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="carousel-item">
+              <div class="image">
+                <img
+                  src="./img/banner_pug.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-caption">
+                <div class="banner-info">
+                  <div class="container">
+                    <div class="banner-info-bg text-left">
+                      <h5>Quality Things for Loving Pets</h5>
+                      <p>Keeps your Pet Smiling</p>
+                      <a class="btn btn-style btn-white" href=""> Read More</a>
+                      <a class="btn btn-style border-btn" href="">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-caption">
+                <div class="banner-info">
+                  <div class="container">
+                    <div class="banner-info-bg text-left">
+                      <h5>Quality Things for Loving Pets</h5>
+                      <p>Keeps your Pet Smiling</p>
+                      <a class="btn btn-style btn-white" href=""> Read More</a>
+                      <a class="btn btn-style border-btn" href="">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="carousel-item">
+              <img
+                src="./img/banner_pug.jpg "
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption carousel-view">
+                <div class="banner-info">
+                  <div class="container">
+                    <div class="banner-info-bg ml-lg-auto">
+                      <h5>Delivering happiness for Pets</h5>
+                      <p class="caro__text">We help your Projects</p>
+                      <a class="btn btn-style caro__button btn-white" href="">
+                        Read More</a
+                      >
+                      <a class="btn btn-style caro__button2 border-btn" href="">
+                        Contact Us</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--3 About Us -->
-    <section></section>
+     <section class="w3l-grids-3 py-5" id="about">
+      <div class="container py-md-5 py-3">
+        <div class="bottom-ab-grids align-items-center">
+          <div class="bottom-ab-left">
+            <h6 class="sub-title HPAbout">About Us</h6>
+            <h3 class="hny-title">We love your pets like they are our own</h3>
+            <p class="my-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur hic odio voluptatem tenetur consequatur. Vestibulum
+              ante ipsum primis in faucibus orci luctus et ultrices posuere
+              cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+              sodales quis.
+            </p>
+            <a href="" class="read"> Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--4 Grid -->
     <section class="features py-5">
@@ -297,7 +529,7 @@
                   <p>Free Supports</p>
                   <p>Customer Support</p>
                 </div>
-                <button class="btn btn-success">Buy Now</button>
+                <button class="btn btn-success">Get Started</button>
               </div>
             </div>
             <!-- 3 -->
@@ -615,6 +847,8 @@
       </div>
     </footer>
 
+    
+
     <!-- movielayout pop up -->
 
     <div id="movie_popup" class="movie__popup">
@@ -630,6 +864,11 @@
         class="fa fa-times movie-icon animate__animated animate__zoomIn wow"
       ></i>
     </div>
+
+    <!-- back to top -->
+     <a id="backTop" class="return__button cd-top--fade-out cd-top text-replace js-cd-top cd-top--is-visible" href="#">
+      <i class="fa fa-angle-up"></i>
+    </a>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -656,16 +895,17 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- count up js -->
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
       integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
+    ></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       $(".counter").counterUp({
         delay: 10,
-        time: 1000,
+        time: 2000,
       });
     </script>
 
@@ -706,6 +946,7 @@
         });
       });
     </script>
+    
 
     <!-- main js -->
     <script src="./js/index.js"></script>
